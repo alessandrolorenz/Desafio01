@@ -1,19 +1,30 @@
 {
-  "name": "desafio1",
+  "name": "Cadastro",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node node_modules/nodemon/bin/nodemon.js src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alessandrolorenz/Desafio01.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alessandrolorenz/Desafio01/issues"
+  },
+  "homepage": "https://github.com/alessandrolorenz/Desafio01#readme",
   "dependencies": {
-    "body-parser": "1.15.2",
-    "express": "4.14.0",
-    "express-validator": "^6.3.1",
-    "mongodb": "2.2.10",
+    "axios": "^0.19.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
     "mongoose": "^5.8.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   }
 }
