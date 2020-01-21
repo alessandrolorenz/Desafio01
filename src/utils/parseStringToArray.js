@@ -1,4 +1,4 @@
-
+'use strict';
 module.exports = function parseStringToArray(arrayAsString) {
-  return arrayAsString.split(',').map(tech => tech.trim())
-}
+  return arrayAsString.split(',').map(tech => tech.trim());
+};

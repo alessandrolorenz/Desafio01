@@ -1,4 +1,5 @@
-const mongoose = require('mongoose')
+'use strict';
+const mongoose = require('mongoose');
 
 const PointSchema = new mongoose.Schema({
   type: {
@@ -6,10 +7,10 @@ const PointSchema = new mongoose.Schema({
     enum: ['Point'],
     required: true,
   },
-  coordinates:{
+  coordinates: {
     type: [Number],
-    required: true
-  }
-})
+    required: true,
+  },
+});
 
-module.exports = PointSchema
+module.exports = PointSchema;
