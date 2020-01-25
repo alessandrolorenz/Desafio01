@@ -1,15 +1,10 @@
 'use strict';
 const { Router } = require('express');
-const DevController = require('./controllers/DevController');
-const SearchController = require('./controllers/SearchController');
+const apllyRoutes = require('./routesClass');
 
-const routes = Router();
+const router = Router();
 
-routes.get('/devs', DevController.index);
-routes.post('/devs', DevController.store);
-routes.put('/devs', DevController.update);
-routes.delete('/devs', DevController.destroy);
 
-routes.get('/search', SearchController.index);
+apllyRoutes.apllyRoutes(router);
 
-module.exports = routes;
+module.exports = router;
